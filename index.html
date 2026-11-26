@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study MBBS in Bulgaria | Medical University Pleven — Campus Abroad</title>
+<style>
+  :root{
+    --green:#00966E;
+    --green-dark:#036D4F;
+    --red:#D62612;
+    --cream:#FFF8EF;
+    --ink:#1B2B26;
+    --muted:#5b6b66;
+    --card:#ffffff;
+    --border:#e7ded0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Segoe UI',system-ui,-apple-system,sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+    line-height:1.6;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px;}
+
+  /* NAV */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:var(--cream);
+    border-bottom:3px solid var(--green);
+  }
+  nav{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1140px;margin:0 auto;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.1rem;color:var(--green-dark);}
+  .logo span.dot{width:10px;height:10px;background:var(--red);border-radius:50%;display:inline-block;}
+  nav ul{display:flex;gap:26px;list-style:none;font-weight:600;font-size:.92rem;}
+  nav ul a:hover{color:var(--red);}
+  .cta-btn{
+    background:var(--red);color:#fff;padding:10px 20px;border-radius:30px;font-weight:700;font-size:.9rem;
+    box-shadow:0 4px 14px rgba(214,38,18,.3);
+  }
+  .nav-toggle{display:none;}
+
+  /* HERO */
+  .hero{
+    position:relative;background:linear-gradient(120deg,var(--green-dark),var(--green));
+    color:#fff;overflow:hidden;
+  }
+  .hero-inner{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;
+    padding:70px 24px;max-width:1140px;margin:0 auto;
+  }
+  .hero h1{font-size:2.6rem;line-height:1.15;margin-bottom:18px;}
+  .hero h1 em{font-style:normal;color:#FFD86B;}
+  .hero p{font-size:1.05rem;opacity:.92;max-width:48ch;margin-bottom:26px;}
+  .hero-badges{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:28px;}
+  .badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);padding:7px 14px;border-radius:20px;font-size:.82rem;font-weight:600;}
+  .hero-btns{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn-primary{background:var(--red);color:#fff;padding:13px 26px;border-radius:30px;font-weight:700;box-shadow:0 6px 18px rgba(0,0,0,.25);}
+  .btn-outline{border:2px solid #fff;color:#fff;padding:11px 24px;border-radius:30px;font-weight:700;}
+  .hero-img{
+    border-radius:18px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.35);
+    border:4px solid rgba(255,255,255,.25);
+  }
+  .hero-img img{width:100%;height:420px;object-fit:cover;object-position:center 20%;}
+
+  /* strip */
+  .strip{background:#fff;border-bottom:1px solid var(--border);}
+  .strip .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;padding:18px 24px;gap:16px;}
+  .strip-item{text-align:center;flex:1;min-width:130px;}
+  .strip-item .num{font-size:1.5rem;font-weight:800;color:var(--green-dark);}
+  .strip-item .lbl{font-size:.8rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
+
+  /* sections */
+  section{padding:70px 24px;}
+  .section-head{text-align:center;max-width:680px;margin:0 auto 46px;}
+  .kicker{color:var(--red);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;}
+  .section-head h2{font-size:2rem;margin-top:8px;color:var(--green-dark);}
+  .section-head p{color:var(--muted);margin-top:12px;}
+
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .why-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:26px;transition:.2s;}
+  .why-card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.08);}
+  .why-card .icn{width:46px;height:46px;border-radius:12px;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:14px;}
+  .why-card h3{font-size:1.05rem;margin-bottom:8px;color:var(--ink);}
+  .why-card p{font-size:.92rem;color:var(--muted);}
+
+  .about-split{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center;}
+  .about-split img{border-radius:16px;box-shadow:0 14px 34px rgba(0,0,0,.14);}
+  .about-split h2{color:var(--green-dark);font-size:1.9rem;margin-bottom:16px;}
+  .about-split p{color:var(--muted);margin-bottom:14px;}
+  .pill-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;}
+  .pill{background:#EAF6F1;color:var(--green-dark);padding:6px 14px;border-radius:20px;font-size:.82rem;font-weight:700;border:1px solid #cfeadf;}
+
+  .alt{background:#fff;}
+
+  table.curric{width:100%;border-collapse:collapse;font-size:.88rem;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.05);}
+  table.curric th{background:var(--green-dark);color:#fff;padding:10px 12px;text-align:left;font-weight:700;}
+  table.curric td{padding:9px 12px;border-bottom:1px solid var(--border);}
+  table.curric tr:nth-child(even) td{background:#FAF6ED;}
+  .table-wrap{overflow-x:auto;border-radius:12px;}
+  .curric-note{font-size:.85rem;color:var(--muted);margin-top:14px;}
+
+  .gallery-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  .gallery-row img{border-radius:12px;height:170px;width:100%;object-fit:cover;box-shadow:0 6px 16px rgba(0,0,0,.1);transition:.2s;}
+  .gallery-row img:hover{transform:scale(1.03);}
+  .gallery-caption{text-align:center;font-size:.8rem;color:var(--muted);margin-top:6px;}
+
+  .approvals{display:flex;gap:16px;flex-wrap:wrap;justify-content:center;}
+  .approval-card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px 24px;display:flex;align-items:center;gap:12px;min-width:220px;}
+  .approval-card .tag{background:var(--red);color:#fff;font-weight:800;font-size:.78rem;padding:4px 10px;border-radius:6px;}
+
+  .accom-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;}
+  .fact-list{list-style:none;}
+  .fact-list li{padding:10px 0;border-bottom:1px dashed var(--border);display:flex;gap:10px;}
+  .fact-list li b{color:var(--green-dark);min-width:150px;}
+
+  .map-img{border-radius:16px;box-shadow:0 14px 34px rgba(0,0,0,.14);}
+
+  .visit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .visit-card{border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.1);background:#fff;}
+  .visit-card img{height:160px;object-fit:cover;width:100%;}
+  .visit-card .cap{padding:8px 10px;font-size:.78rem;color:var(--muted);}
+
+  .cta-band{background:linear-gradient(120deg,var(--red),#A91C0D);color:#fff;border-radius:22px;margin:0 24px;padding:50px 30px;text-align:center;}
+  .cta-band h2{font-size:1.8rem;margin-bottom:12px;}
+  .cta-band p{opacity:.92;margin-bottom:22px;}
+  .cta-band .btn-primary{background:#fff;color:var(--red);}
+
+  footer{background:var(--ink);color:#cfe3dc;padding:50px 24px 20px;}
+  .foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;margin-bottom:30px;}
+  footer h4{color:#fff;margin-bottom:14px;font-size:1rem;}
+  footer p,footer a{font-size:.88rem;color:#aebfb8;}
+  footer ul{list-style:none;}
+  footer ul li{margin-bottom:8px;}
+  .foot-bottom{border-top:1px solid #33433d;padding-top:18px;text-align:center;font-size:.8rem;color:#7f958c;}
+
+  @media(max-width:860px){
+    nav ul{display:none;}
+    .hero-inner{grid-template-columns:1fr;padding:50px 20px;}
+    .hero h1{font-size:2rem;}
+    .why-grid{grid-template-columns:1fr 1fr;}
+    .about-split{grid-template-columns:1fr;}
+    .accom-grid{grid-template-columns:1fr;}
+    .gallery-row{grid-template-columns:1fr 1fr;}
+    .visit-grid{grid-template-columns:1fr 1fr;}
+    .foot-grid{grid-template-columns:1fr;gap:26px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo"><span class="dot"></span>CAMPUS ABROAD <span style="font-weight:400;color:var(--muted);font-size:.85rem;">&nbsp;| MU Pleven, Bulgaria</span></div>
+    <ul>
+      <li><a href="#why">Why Bulgaria</a></li>
+      <li><a href="#about">About MU Pleven</a></li>
+      <li><a href="#curriculum">Curriculum</a></li>
+      <li><a href="#accreditation">Accreditation</a></li>
+      <li><a href="#accommodation">Accommodation</a></li>
+      <li><a href="#visit">Our Visit</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="tel:+919285000444" class="cta-btn">Call +91 9285 000 444</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1>Study <em>MBBS</em> in Bulgaria at<br>Medical University&nbsp;Pleven</h1>
+      <p>An EU-recognised, WHO &amp; ECFMG listed medical degree, affordable tuition, and a campus that has already welcomed Campus Abroad's own students to Pleven.</p>
+      <div class="hero-badges">
+        <span class="badge">🇪🇺 EU Member State</span>
+        <span class="badge">🏥 University Hospital — 1,000+ beds</span>
+        <span class="badge">📚 Established 1974</span>
+        <span class="badge">🌍 Students from 30+ countries</span>
+      </div>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">Get Free Counselling</a>
+        <a href="#about" class="btn-outline">Explore the University</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="images/hero-bulgaria.jpg" alt="Study MBBS in Bulgaria - Medical University Pleven">
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="strip-item"><div class="num">6 yrs</div><div class="lbl">MBBS Programme</div></div>
+    <div class="strip-item"><div class="num">21st</div><div class="lbl">Ranked in Bulgaria</div></div>
+    <div class="strip-item"><div class="num">6,000+</div><div class="lbl">Students on Campus</div></div>
+    <div class="strip-item"><div class="num">50 EUR</div><div class="lbl">Hostel rent / month*</div></div>
+    <div class="strip-item"><div class="num">1865</div><div class="lbl">Pleven City Hospital founded</div></div>
+  </div>
+</div>
+
+<section id="why">
+  <div class="section-head">
+    <div class="kicker">Why choose this route</div>
+    <h2>Why Study MBBS in Bulgaria?</h2>
+    <p>Bulgaria combines EU-standard medical training with a cost of living that keeps the whole MBBS journey affordable.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card"><div class="icn">🎓</div><h3>Quality Education</h3><p>Bulgarian medical universities are recognised globally for high standards of education and research facilities.</p></div>
+    <div class="why-card"><div class="icn">💶</div><h3>Affordable Tuition</h3><p>Fees are relatively low compared to Western Europe, making it an attractive option for international students.</p></div>
+    <div class="why-card"><div class="icn">🇪🇺</div><h3>EU Recognition</h3><p>Bulgaria is an EU member — degrees are recognised across the EU and beyond, opening doors to further study and work.</p></div>
+    <div class="why-card"><div class="icn">🗣️</div><h3>English-Medium Programs</h3><p>MBBS is taught entirely in English, so there's no language barrier to begin your medical education.</p></div>
+    <div class="why-card"><div class="icn">🌍</div><h3>International Recognition</h3><p>Graduates are eligible to practise in countries worldwide — degrees are recognised by WHO, ECFMG and NMC.</p></div>
+    <div class="why-card"><div class="icn">🩺</div><h3>Hands-on Clinical Training</h3><p>Ample clinical training opportunities across hospitals and clinics give real, hands-on patient exposure.</p></div>
+  </div>
+</section>
+
+<section id="about" class="alt">
+  <div class="wrap">
+    <div class="about-split">
+      <div>
+        <div class="kicker">About the university</div>
+        <h2>Medical University – Pleven</h2>
+        <p>Medical University Pleven is one of the five medical universities in Bulgaria. It was established in 1974, expanding on the traditions of Pleven City Hospital, founded in 1865.</p>
+        <p>Today it combines the traditions of the past with contemporary pre-clinical and clinical facilities — a University Hospital with more than 1,000 beds, modern diagnostic equipment, and specialised clinics and research units.</p>
+        <p>Education runs through three Faculties, a Medical College and a specialised Department: Faculty of Medicine, Faculty of Public Health, Faculty of Health Care, Medical College, and the Department of Language and Specialised Training.</p>
+        <div class="pill-row">
+          <span class="pill">6-year English Medicine programme</span>
+          <span class="pill">Nursing &amp; Midwifery (4 yrs)</span>
+          <span class="pill">30+ nationalities on campus</span>
+        </div>
+      </div>
+      <img src="images/about-campus.jpg" alt="Medical University Pleven campus buildings">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="kicker">Teaching methodology</div>
+    <h2>A Blended, Hands-On Learning Approach</h2>
+  </div>
+  <div class="about-split">
+    <img src="images/teaching-methodology.jpg" alt="Medical University Pleven students and faculty">
+    <div>
+      <p>The university implements a blended learning approach that progressively awards students greater autonomy as they progress through the programme, with a special focus on practical and small-group teaching.</p>
+      <p>This is supported by large-group lectures covering theoretical aspects of the programme, plus seminars and tutorials run individually or in small groups.</p>
+      <p>While many universities have moved away from full-body dissection, MU Pleven still offers unbeatable, hands-on anatomy training in its specialised dissection halls.</p>
+      <blockquote style="border-left:4px solid var(--green);padding-left:16px;color:var(--green-dark);font-weight:600;margin-top:18px;">
+        "Students are fully supported by professors and assistants — they are always available to help with any problems you have."
+        <div style="font-size:.8rem;color:var(--muted);font-weight:400;margin-top:6px;">— Faculty, Medical University Pleven</div>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="curriculum" class="alt">
+  <div class="section-head">
+    <div class="kicker">What you'll study</div>
+    <h2>Curriculum — MBBS (Medicine), 6 Years</h2>
+    <p>Faculty of Medicine, Medical University Pleven — compulsory disciplines overview.</p>
+  </div>
+  <div class="wrap">
+    <div class="table-wrap">
+      <table class="curric">
+        <thead><tr><th>Discipline</th><th>Total Hours</th><th>Lectures</th><th>Practicals</th><th>Credits</th></tr></thead>
+        <tbody>
+          <tr><td>Anatomy</td><td>315</td><td>90</td><td>225</td><td>16</td></tr>
+          <tr><td>Biochemistry</td><td>180</td><td>90</td><td>90</td><td>10.5</td></tr>
+          <tr><td>Physiology</td><td>195</td><td>75</td><td>120</td><td>11</td></tr>
+          <tr><td>Microbiology</td><td>135</td><td>60</td><td>75</td><td>10.5</td></tr>
+          <tr><td>Pathoanatomy &amp; Cytopathology</td><td>210</td><td>90</td><td>120</td><td>12</td></tr>
+          <tr><td>Pharmacology</td><td>150</td><td>60</td><td>90</td><td>7.5</td></tr>
+          <tr><td>Obstetrics &amp; Gynecology</td><td>210</td><td>75</td><td>135</td><td>10</td></tr>
+          <tr><td>Internal Diseases &amp; Therapy (incl. IDT subspecialties)</td><td>600</td><td>195</td><td>405</td><td>33.5</td></tr>
+          <tr><td>Surgery Diseases &amp; Oncology</td><td>270</td><td>90</td><td>180</td><td>13.5</td></tr>
+          <tr><td>Pediatrics</td><td>210</td><td>60</td><td>150</td><td>11</td></tr>
+          <tr><td>Epidemiology, Infectious Diseases, Parasitology &amp; Tropical Medicine</td><td>150</td><td>60</td><td>90</td><td>7.5</td></tr>
+          <tr><td>Hygiene, Ecology &amp; Occupational Diseases</td><td>150</td><td>75</td><td>75</td><td>9</td></tr>
+          <tr><td><b>Total (compulsory)</b></td><td><b>4965</b></td><td><b>1943</b></td><td><b>3668</b></td><td><b>295</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="curric-note">Plus optional &amp; facultative subjects (Medical Psychology, Emergency Medicine, Oncology, Clinical Allergology, Sports Medicine and more) and state-mandated clinical practice / internship rotations across Internal Diseases, Surgery, Obstetrics &amp; Gynecology, Pediatrics and Infectious Diseases.</p>
+  </div>
+</section>
+
+<section>
+  <div class="about-split">
+    <div>
+      <div class="kicker">Infrastructure</div>
+      <h2 style="color:var(--green-dark);font-size:1.7rem;margin-bottom:14px;">Modern Campus, Classic Foundations</h2>
+      <p style="color:var(--muted);">From the historic main building to new red-and-white teaching blocks, the campus combines heritage architecture with contemporary labs, lecture halls and a University Hospital used daily for clinical training.</p>
+    </div>
+    <img src="images/curriculum-buildings.jpg" alt="Medical University Pleven campus buildings and facilities" class="map-img">
+  </div>
+</section>
+
+<section id="accreditation" class="alt">
+  <div class="section-head">
+    <div class="kicker">Trust &amp; recognition</div>
+    <h2>Accreditation &amp; Recognition</h2>
+    <p>Medical University Pleven is a self-governed, accredited state university — one of Bulgaria's leading medical institutions.</p>
+  </div>
+  <div class="wrap">
+    <div class="approvals">
+      <div class="approval-card"><span class="tag">WHO</span> World Health Organization listed</div>
+      <div class="approval-card"><span class="tag">ECFMG</span> Eligible for USMLE pathway</div>
+      <div class="approval-card"><span class="tag">NMC</span> National Medical Commission, India eligible</div>
+      <div class="approval-card"><span class="tag">EQAR</span> European Quality Assurance Register</div>
+      <div class="approval-card"><span class="tag">ENQA</span> European Assoc. for Quality Assurance in HE</div>
+    </div>
+    <p style="text-align:center;color:var(--muted);max-width:680px;margin:26px auto 0;">European graduates are eligible to apply for full registration with regulatory bodies such as the General Medical Council (UK) in all EEA member states, and are also eligible to sit the USMLE and the Medical Council of India examinations.</p>
+    <div style="margin-top:36px;">
+      <img src="images/accreditation.jpg" alt="WHO, NMC, ECFMG and EQAR accreditation" class="map-img" style="max-width:720px;margin:0 auto;">
+    </div>
+  </div>
+</section>
+
+<section id="accommodation">
+  <div class="section-head">
+    <div class="kicker">Life in Pleven</div>
+    <h2>Accommodation &amp; Student Life</h2>
+  </div>
+  <div class="wrap">
+    <div class="accom-grid">
+      <img src="images/sofia-skyline.jpg" alt="Sofia, Bulgaria skyline" class="map-img">
+      <ul class="fact-list">
+        <li><b>Hostel cost</b> ~€6,300 – €9,000 BGN / month* with amenities</li>
+        <li><b>Room type</b> Standard rooms — 2 beds, 2 desks, 1 bathroom</li>
+        <li><b>Dormitories</b> Two student dormitories; one located near the university (limited seats)</li>
+        <li><b>Cheapest option</b> Private rent available from around 50 EUR/month</li>
+        <li><b>Leisure</b> National &amp; international conferences — Bulgarian Anatomical Society Congress, student medical conferences</li>
+        <li><b>Erasmus+</b> Students can gather further international experience through the Erasmus+ programme</li>
+      </ul>
+    </div>
+    <p class="curric-note" style="text-align:center;margin-top:10px;">*Figures as published in the official Campus Abroad / MU Pleven brochure.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="section-head">
+    <div class="kicker">Getting around</div>
+    <h2>Pleven — Well Connected</h2>
+    <p>An important transport hub, ideally placed to explore Bulgaria and the wider region.</p>
+  </div>
+  <div class="wrap" style="display:flex;justify-content:center;">
+    <img src="images/pleven-map.jpg" alt="Map of Pleven and travel times to Sofia, Varna, Bansko and beyond" class="map-img" style="max-width:720px;">
+  </div>
+</section>
+
+<section id="visit">
+  <div class="section-head">
+    <div class="kicker">On the ground</div>
+    <h2>Our Visit to Medical University Pleven</h2>
+    <p>Real photos from the Campus Abroad team's recent trip — meeting faculty, touring the campus and welcoming new students to Bulgaria.</p>
+  </div>
+  <div class="wrap">
+    <div class="visit-grid">
+      <div class="visit-card"><img src="images/airport-departure-1.jpg" alt="Campus Abroad team departing for Bulgaria"><div class="cap">Setting off for Bulgaria</div></div>
+      <div class="visit-card"><img src="images/airport-departure-2.jpg" alt="Students and counsellor at the airport"><div class="cap">Students ready to fly out</div></div>
+      <div class="visit-card"><img src="images/pleven-airport-arrival.jpg" alt="Group welcomed at Pleven airport by Medical University Pleven"><div class="cap">Welcomed on arrival in Bulgaria</div></div>
+      <div class="visit-card"><img src="images/mu-pleven-building-1.jpg" alt="Medical University Pleven main building exterior"><div class="cap">The historic main building</div></div>
+      <div class="visit-card"><img src="images/mu-pleven-building-2.jpg" alt="Group photo outside Medical University Pleven"><div class="cap">Campus tour with the group</div></div>
+      <div class="visit-card"><img src="images/rectors-plaque.jpg" alt="Memorial plaque of past rectors of Medical University"><div class="cap">Rectors of the University, since 1974</div></div>
+      <div class="visit-card"><img src="images/meeting-staff.jpg" alt="Meeting with Medical University Pleven admissions staff"><div class="cap">Meeting the admissions team</div></div>
+      <div class="visit-card"><img src="images/gift-exchange.jpg" alt="Gift exchange with university representative"><div class="cap">A warm exchange of gifts</div></div>
+      <div class="visit-card"><img src="images/stethoscope-gift.jpg" alt="Stethoscope gifted to a future MBBS student"><div class="cap">Gearing up for medical school</div></div>
+      <div class="visit-card"><img src="images/selfie-plaque.jpg" alt="Counsellor selfie inside Medical University Pleven"><div class="cap">Inside the university halls</div></div>
+      <div class="visit-card"><img src="images/trip-shop.jpg" alt="Students on their way to Bulgaria"><div class="cap">On the way — all smiles</div></div>
+      <div class="visit-card"><img src="images/mu-pleven-building-3.jpg" alt="Medical University Pleven building facade"><div class="cap">Classic architecture, modern labs</div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="cta-band">
+    <h2>Ready to Begin Your MBBS Journey in Bulgaria?</h2>
+    <p>Talk to our counsellors for eligibility, documentation and admission timelines for Medical University Pleven.</p>
+    <a href="tel:+919285000444" class="btn-primary">Call +91 9285 000 444</a>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Campus Abroad Educational Services LLP</h4>
+        <p>Since 2008, guiding students to quality, affordable medical education abroad — including Medical University Pleven, Bulgaria.</p>
+        <p style="margin-top:10px;">📞 +91 9285 000 444 &nbsp;|&nbsp; +91 8893 842 121</p>
+        <p>🌐 www.campusabroadedu.com</p>
+      </div>
+      <div>
+        <h4>Corporate Office</h4>
+        <ul>
+          <li>Calicut — Room No. S-32, IInd Floor, Emerald Building, IG Road, Near Big Bazar, Kozhikode – 673 004</li>
+          <li>Thrissur — 4th Floor, Round West, Thrissur – 680 001</li>
+          <li>Ernakulam — 1st Floor, Mes Building, Kaloor – 682 017</li>
+        </ul>
+      </div>
+      <div>
+        <h4>International Offices</h4>
+        <ul>
+          <li>UAE — Al Nahda, Al Qusais-2, Dubai</li>
+          <li>Moldova — Street Malina Mica 68, Chisinau – 2025</li>
+          <li>KSA — Al Malaz District, Riyadh – 12831</li>
+          <li>Russia — Vsevolod Vishnevsky Street-4, Moscow</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      &copy; 2026 Campus Abroad Educational Services LLP. Information sourced from the official Medical University Pleven / Campus Abroad brochure. For verified seat availability, fees and documentation, please contact a Campus Abroad counsellor.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
